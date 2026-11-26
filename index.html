@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080a0b">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Illuminati Aetherni — an independent philosophical circle devoted to knowledge, inner discipline, symbolism, and the illumination of the mind.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Illuminati Aetherni — Beyond the Visible">
+  <meta property="og:description" content="The pursuit of knowledge begins within.">
+  <meta property="og:url" content="https://illuminati.cv/">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Illuminati Aetherni — Beyond the Visible</title>
+  <style>
+    :root{color-scheme:dark;--bg:#080a0b;--gold:#c6a875;--pale:#ead9b5;--cream:#eee9df;--muted:#a19b8d;--soft:#79766f;--line:rgba(211,181,131,.17)}
+    *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;min-width:320px;min-height:100vh;background:var(--bg);color:var(--cream);font-family:Manrope,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+    a{color:inherit}
+    ::selection{background:rgba(198,168,117,.35);color:#fff}
+    .page{min-height:100vh;min-height:100svh;position:relative;isolation:isolate;overflow:hidden;display:flex;flex-direction:column}
+    .page::before{content:"";position:absolute;inset:0;z-index:-3;background:radial-gradient(ellipse 43% 43% at 50% 37%,rgba(115,85,46,.13),transparent 84%),radial-gradient(ellipse 75% 60% at 50% 110%,rgba(70,54,35,.09),transparent 75%),linear-gradient(145deg,#0c0e10 0%,#07090a 51%,#090a0b 100%)}
+    .page::after{content:"";position:absolute;z-index:-2;inset:0;pointer-events:none;opacity:.23;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.87' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.2'/%3E%3C/svg%3E")}
+    .frame{position:absolute;z-index:-1;inset:22px;border:1px solid rgba(199,167,111,.12);pointer-events:none}
+    .frame::before,.frame::after{content:"";position:absolute;width:27px;height:27px;border-color:rgba(198,168,117,.47);border-style:solid}
+    .frame::before{top:-1px;left:-1px;border-width:1px 0 0 1px}
+    .frame::after{bottom:-1px;right:-1px;border-width:0 1px 1px 0}
+    .topbar{display:flex;align-items:center;justify-content:space-between;width:100%;max-width:1460px;margin:0 auto;padding:44px 65px 0;gap:16px}
+    .brand{display:flex;align-items:center;gap:15px;text-decoration:none}
+    .brand-mark{display:flex;align-items:center;justify-content:center;width:42px;height:42px;border:1px solid rgba(198,168,117,.48);transform:rotate(45deg)}
+    .brand-mark span{font-family:"Cormorant Garamond",Georgia,serif;font-size:24px;color:var(--pale);transform:rotate(-45deg);font-weight:500;line-height:1}
+    .brand-type{display:flex;flex-direction:column;gap:4px}
+    .brand-type strong{font-size:10px;letter-spacing:.27em;color:#e2d5bd;font-weight:600}
+    .brand-type small{font-size:9px;letter-spacing:.34em;color:#8a8172}
+    .top-note{display:flex;align-items:center;gap:10px;color:#9a8d75;font-size:9px;letter-spacing:.27em;text-transform:uppercase}
+    .top-note::before{content:"";display:block;width:25px;height:1px;background:rgba(198,168,117,.55)}
+    main{width:100%;flex:1;display:flex;justify-content:center;align-items:center;padding:38px 24px 52px}
+    .hero{display:flex;align-items:center;flex-direction:column;text-align:center;width:100%;max-width:850px}
+    .eyebrow{display:flex;align-items:center;justify-content:center;gap:16px;font-size:10px;letter-spacing:.38em;text-transform:uppercase;color:var(--gold);margin:0 0 7px;font-weight:600}
+    .eyebrow::before,.eyebrow::after{content:"";display:block;width:27px;height:1px;background:var(--line)}
+    .sigil-wrap{position:relative;width:min(310px,72vw);height:min(310px,72vw);display:grid;place-items:center;margin:0 0 1px}
+    .sigil-wrap::before{content:"";position:absolute;inset:12%;border-radius:50%;background:radial-gradient(circle,rgba(211,157,77,.13),transparent 70%);filter:blur(21px)}
+    .sigil{width:100%;height:100%;overflow:visible;filter:drop-shadow(0 0 19px rgba(195,151,87,.14))}
+    .orbit-a{transform-origin:200px 200px;animation:turn 85s linear infinite}
+    .orbit-b{transform-origin:200px 200px;animation:turn-reverse 110s linear infinite}
+    h1{margin:-2px 0 0;display:flex;flex-direction:column;align-items:center;font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;text-transform:uppercase;color:var(--cream);text-shadow:0 2px 25px rgba(225,197,151,.07)}
+    h1 span{font-size:clamp(58px,9.5vw,112px);line-height:.88;letter-spacing:.12em;padding-left:.12em}
+    h1 small{margin-top:14px;font-family:Manrope,Arial,sans-serif;font-size:clamp(12px,1.5vw,17px);letter-spacing:.62em;padding-left:.62em;color:var(--gold);font-weight:500}
+    .ornament{display:flex;align-items:center;justify-content:center;gap:13px;margin:32px 0 22px;color:var(--gold)}
+    .ornament i{display:block;width:66px;height:1px;background:linear-gradient(90deg,transparent,rgba(198,168,117,.45))}
+    .ornament i:last-child{transform:rotate(180deg)}
+    .ornament b{width:5px;height:5px;border:1px solid var(--gold);transform:rotate(45deg)}
+    .statement{font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(27px,3.5vw,39px);line-height:1.05;letter-spacing:.015em;font-weight:400;margin:0 0 15px;color:#e6dcc8}
+    .description{font-size:12px;line-height:2;letter-spacing:.045em;max-width:460px;color:#9e9a91;margin:0 auto 28px;font-weight:400}
+    .contact{display:inline-flex;align-items:center;justify-content:center;gap:24px;text-decoration:none;text-transform:uppercase;font-size:10px;letter-spacing:.23em;font-weight:600;color:#edddbb;border:1px solid rgba(198,168,117,.48);background:linear-gradient(100deg,rgba(191,149,87,.11),rgba(191,149,87,.035));padding:16px 22px 16px 26px;transition:border-color .25s,background .25s,transform .25s,box-shadow .25s}
+    .contact:hover{border-color:#d9ba82;background:rgba(198,168,117,.14);transform:translateY(-2px);box-shadow:0 10px 40px rgba(5,5,5,.25)}
+    .contact:focus-visible{outline:2px solid var(--pale);outline-offset:5px}
+    .contact svg{height:15px;width:15px;stroke:var(--gold);transition:transform .25s}
+    .contact:hover svg{transform:translateX(4px)}
+    .email-note{margin:13px 0 0;color:#77756e;letter-spacing:.06em;font-size:10px}
+    .email-note a{text-decoration:none;border-bottom:1px solid transparent}
+    .email-note a:hover{border-bottom-color:#77756e}
+    footer{display:flex;align-items:center;justify-content:space-between;gap:20px;width:100%;max-width:1460px;margin:0 auto;padding:0 65px 38px;color:#797263;font-size:9px;letter-spacing:.22em;text-transform:uppercase}
+    footer .motto{font-family:"Cormorant Garamond",Georgia,serif;font-size:15px;letter-spacing:.18em;font-style:italic;color:#a9987b;text-transform:none}
+    .footer-right{display:flex;align-items:center;gap:13px}
+    .footer-right .dot{height:3px;width:3px;border-radius:50%;background:#9c886a}
+    @keyframes turn{to{transform:rotate(360deg)}}
+    @keyframes turn-reverse{to{transform:rotate(-360deg)}}
+    @media(max-width:640px){
+      .frame{inset:11px}
+      .topbar{padding:27px 28px 0}
+      .brand{gap:12px}
+      .brand-mark{width:34px;height:34px}
+      .brand-mark span{font-size:21px}
+      .brand-type strong{font-size:9px}
+      .brand-type small{font-size:8px}
+      .top-note{font-size:0;gap:0}
+      .top-note::before{width:18px}
+      main{padding:35px 24px 39px}
+      .eyebrow{font-size:8px;letter-spacing:.26em;gap:10px}
+      .eyebrow::before,.eyebrow::after{width:18px}
+      .sigil-wrap{width:min(260px,72vw);height:min(260px,72vw)}
+      h1 span{font-size:clamp(48px,12vw,75px);letter-spacing:.08em;padding-left:.08em}
+      h1 small{margin-top:15px;font-size:12px;letter-spacing:.47em;padding-left:.47em}
+      .ornament{margin:25px 0 19px}
+      .statement{font-size:30px}
+      .description{font-size:11px;line-height:1.85;max-width:320px;margin-bottom:26px}
+      footer{padding:0 28px 27px;font-size:8px}
+      .footer-right{display:none}
+      .footer-left{letter-spacing:.09em}
+      footer .motto{font-size:13px}
+    }
+    @media(max-height:750px) and (min-width:641px){main{padding:15px 24px 25px}.sigil-wrap{width:220px;height:220px}.ornament{margin:19px 0 13px}.description{margin-bottom:19px}.topbar{padding-top:30px}footer{padding-bottom:23px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.orbit-a,.orbit-b{animation:none}.contact,.contact svg{transition:none}}
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="frame" aria-hidden="true"></div>
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="Illuminati Aetherni — home">
+        <span class="brand-mark" aria-hidden="true"><span>✦</span></span>
+        <span class="brand-type"><strong>ILLUMINATI</strong><small>AETHERNI</small></span>
+      </a>
+      <span class="top-note">A PRIVATE PHILOSOPHICAL CIRCLE</span>
+    </header>
+    <main>
+      <section class="hero" aria-labelledby="title">
+        <p class="eyebrow">THE PURSUIT OF KNOWLEDGE</p>
+        <div class="sigil-wrap">
+          <svg class="sigil" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illuminati Aetherni emblem: a geometric triangle enclosing an illuminated eye">
+            <defs>
+              <linearGradient id="metal" x1="70" y1="63" x2="336" y2="344" gradientUnits="userSpaceOnUse"><stop stop-color="#8c7148"/><stop offset=".34" stop-color="#e8cfa0"/><stop offset=".65" stop-color="#9c7e51"/><stop offset="1" stop-color="#d3ae73"/></linearGradient>
+              <linearGradient id="ray" x1="200" y1="92" x2="200" y2="310" gradientUnits="userSpaceOnUse"><stop stop-color="#f5dcae" stop-opacity=".75"/><stop offset="1" stop-color="#a27a46" stop-opacity=".35"/></linearGradient>
+              <radialGradient id="iris"><stop stop-color="#edd5a2"/><stop offset=".26" stop-color="#c39a59"/><stop offset=".66" stop-color="#3c352a"/><stop offset="1" stop-color="#b5925d"/></radialGradient>
+            </defs>
+            <g class="orbit-a" opacity=".4" stroke="#a78b61">
+              <circle cx="200" cy="200" r="185" stroke-width=".5" stroke-dasharray="1 13"/>
+              <path d="M200 9v11M200 380v11M9 200h11M380 200h11" stroke-width=".8"/>
+              <path d="M65 65l8 8M327 327l8 8M65 335l8-8M327 73l8-8" stroke-width=".6"/>
+            </g>
+            <g class="orbit-b" opacity=".35" stroke="#b79a6c">
+              <circle cx="200" cy="200" r="170" stroke-width=".65" stroke-dasharray="48 11 2 11"/>
+              <circle cx="200" cy="200" r="158" stroke-width=".45"/>
+            </g>
+            <path d="M200 49L361 333H39L200 49Z" stroke="url(#metal)" stroke-width="1.5"/>
+            <path d="M200 74L340 320H60L200 74Z" stroke="#a58b62" stroke-opacity=".45" stroke-width=".8"/>
+            <path d="M200 102L317 306H83L200 102Z" stroke="#be9a63" stroke-opacity=".2" stroke-width=".7"/>
+            <path d="M200 49v-19M39 333l-16 11M361 333l16 11" stroke="#c9a36b" stroke-opacity=".65" stroke-width=".8"/>
+            <g stroke="url(#ray)" stroke-width=".65" opacity=".62">
+              <path d="M200 115v42M200 246v34M153 143l17 27M247 143l-17 27M109 197l33 12M291 197l-33 12M121 257l29-18M279 257l-29-18"/>
+              <path d="M181 121l7 37M219 121l-7 37M138 165l25 21M262 165l-25 21M114 222l31-3M286 222l-31-3"/>
+            </g>
+            <path d="M113 204c27-32 57-48 87-48s60 16 87 48c-27 32-57 48-87 48s-60-16-87-48Z" stroke="url(#metal)" stroke-width="1.6"/>
+            <path d="M129 204c21-21 45-32 71-32s50 11 71 32c-21 21-45 32-71 32s-50-11-71-32Z" stroke="#b69a71" stroke-opacity=".55" stroke-width=".7"/>
+            <circle cx="200" cy="204" r="35" stroke="#cba978" stroke-opacity=".77" stroke-width="1.1"/>
+            <circle cx="200" cy="204" r="28" fill="url(#iris)" fill-opacity=".9"/>
+            <circle cx="200" cy="204" r="17" fill="#0c0d0e"/>
+            <circle cx="200" cy="204" r="7" fill="#030505"/>
+            <circle cx="191" cy="195" r="4" fill="#f6e1ba" fill-opacity=".9"/>
+            <circle cx="200" cy="204" r="43" stroke="#c5a574" stroke-opacity=".22" stroke-dasharray="2 7"/>
+            <path d="M200 276v34M184 295h32" stroke="#ba9661" stroke-opacity=".55" stroke-width=".65"/>
+            <path d="M200 36l3.4 9-3.4 9-3.4-9 3.4-9Z" fill="#e6c58a"/>
+            <circle cx="39" cy="333" r="2.3" fill="#d8b783"/><circle cx="361" cy="333" r="2.3" fill="#d8b783"/>
+          </svg>
+        </div>
+        <h1 id="title"><span>ILLUMINATI</span><small>AETHERNI</small></h1>
+        <div class="ornament" aria-hidden="true"><i></i><b></b><i></i></div>
+        <p class="statement">Beyond the visible.</p>
+        <p class="description">An independent philosophical circle dedicated to knowledge, symbolism, inner discipline, and the illumination of the mind.</p>
+        <a class="contact" href="mailto:contact@illuminati.cv?subject=Inquiry%20%E2%80%94%20Illuminati%20Aetherni">
+          <span>CONTACT THE ORDER</span>
+          <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M2 10h15m-6-6 6 6-6 6" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <p class="email-note"><a href="mailto:contact@illuminati.cv">contact@illuminati.cv</a></p>
+      </section>
+    </main>
+    <footer>
+      <span class="footer-left">KNOWLEDGE · DISCIPLINE · SELF-MASTERY</span>
+      <span class="motto">Per scientiam ad lucem</span>
+      <span class="footer-right"><span>ILLUMINATI AETHERNI</span><i class="dot"></i><span>MMXXVI</span></span>
+    </footer>
+  </div>
+</body>
+</html>
