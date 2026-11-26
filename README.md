@@ -1,30 +1,28 @@
-# Illuminati Aetherni
+# ILLUMINATI — illuminati.cv
 
-Official one-page presentation website for **Illuminati Aetherni**, intended for `illuminati.cv`.
+A minimal, immersive one-page website that presents an independent philosophical circle.
 
-## Structure
+## Design
 
-- `index.html` — complete responsive landing page (HTML, CSS and SVG emblem; no framework or build step).
-- `favicon.svg` — favicon using the same geometric emblem.
+- Distinct, independent eye-in-triangle motif and Minerva owl.
+- The owl is an **original vector illustration inspired by historical Minerval insignia**: the owl perched upon an open book and framed by laurel. It is not a reproduction of an original historic artefact.
+- The eye-in-triangle is a separate **contemporary design motif**; there is no claim that it was a documented insignia of the Bavarian Illuminati.
+- The Latin site motto is *Lux intus, lux mundi* — contemporary branding, not claimed as an authentic eighteenth-century order motto.
+- Dark editorial design with subtle cursor-driven parallax and light particles, reduced-motion support, keyboard-accessible mailto contact, responsive layout and HTML/CSS/SVG without a frontend framework.
+- Only visible contact link: `contact@illuminati.cv`. Confirm the mailbox or forwarding actually works before promoting the site.
 
 ## Hosting
 
-Cloudflare Pages, linked to this GitHub repository, production branch `main`.
+Existing Cloudflare Pages project `illuminati-aetherni` uses GitHub `niibet34-sys/illuminati` on branch `main`.
 
-- Build command: none
-- Output directory: `/`
-- Production hostname: `illuminati.cv` (when the domain is connected)
+- Build command: none.
+- Output directory: `.`.
+- Temporary URL: https://illuminati-aetherni.pages.dev/
+- Planned custom domain: https://illuminati.cv/
 
-Commits to `main` automatically trigger production deployments once Cloudflare Git integration is active.
+## Historical sources for the owl's visual direction
 
-## Contact address
+- Wikimedia Commons, *Emblem of Bavarian Illuminati* (ca. 1788; public domain): https://commons.wikimedia.org/wiki/File:Emblem_of_Bavarian_Illuminati.jpg
+- Wikimedia Commons, *Minerval insignia*: https://commons.wikimedia.org/wiki/File:Minerval_insignia.png
 
-The page currently shows `contact@illuminati.cv`. **Make sure this mailbox or an email-forwarding rule exists before announcing the site.**
-
-## Editing
-
-Update the content or visuals in `index.html`. The website is deliberately dependency-free except for optional Google Fonts; system fonts are used as a fallback.
-
-## Accessibility
-
-Semantic HTML, descriptive logo, keyboard focus styles and reduced-motion support are included.
+The current page contains no external historic artwork assets: its illustrations are custom SVG. External resources are optional web fonts with local fallbacks.
