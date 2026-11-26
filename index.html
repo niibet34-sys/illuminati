@@ -1,116 +1,127 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#0c0d0d">
-<meta name="description" content="ILLUMINATI — an independent philosophical circle devoted to knowledge, wisdom and the illumination of the mind. Lux intus, lux mundi.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="ILLUMINATI — Lux intus, lux mundi">
-<meta property="og:description" content="An independent philosophical circle. Knowledge. Discernment. Inner light.">
-<meta property="og:url" content="https://illuminati.cv/">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
-<title>ILLUMINATI — Lux intus, lux mundi</title>
-<style>
-:root{color-scheme:dark;--coal:#0c0d0d;--paper:#ece7db;--ivory:#efeae0;--mist:#aca69d;--brass:#a8967a;--ex:0px;--ey:0px}
-*,*::before,*::after{box-sizing:border-box}
-html{min-width:320px}
-body{margin:0;background:var(--coal);color:var(--ivory);font-family:"Manrope",Arial,sans-serif;-webkit-font-smoothing:antialiased}
-a{color:inherit}
-::selection{background:#a59b8a;color:#101110}
-button{font:inherit}
-.site{position:relative;min-height:100svh;overflow:hidden;isolation:isolate;display:flex;flex-direction:column;background:#0c0d0d}
-.site:before{content:"";pointer-events:none;position:absolute;inset:-15%;z-index:-3;background:radial-gradient(ellipse 36% 38% at 49% 48%,rgba(110,106,98,.13),transparent 85%),radial-gradient(ellipse 55% 64% at 50% 55%,rgba(35,38,40,.5),transparent 80%),linear-gradient(130deg,#131516 0%,#0c0d0d 49%,#121312 100%)}
-.site:after{content:"";pointer-events:none;position:absolute;inset:0;z-index:10;opacity:.15;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.22'/%3E%3C/svg%3E")}
-.ambient{position:absolute;pointer-events:none;z-index:-2;left:50%;top:44%;width:min(950px,95vw);height:660px;transform:translate(-50%,-50%) translate3d(calc(var(--ex)*-.34),calc(var(--ey)*-.34),0);background:radial-gradient(ellipse,rgba(204,197,180,.095),rgba(99,103,105,.035) 37%,transparent 73%);filter:blur(25px);transition:transform .2s}
-.architecture{position:absolute;z-index:-2;inset:0;pointer-events:none;opacity:.5;background:linear-gradient(90deg,rgba(0,0,0,.45),transparent 14%,transparent 86%,rgba(0,0,0,.5)),linear-gradient(90deg,transparent 21.5%,rgba(211,208,198,.026) 21.65%,transparent 22%,transparent 78%,rgba(211,208,198,.025) 78.15%,transparent 78.3%);box-shadow:inset 0 0 200px rgba(0,0,0,.72)}
-.header{position:relative;z-index:5;width:100%;max-width:1650px;margin:0 auto;padding:37px clamp(28px,6vw,96px) 0;display:flex;align-items:center;justify-content:space-between;gap:25px}
-.brand{font-size:11px;letter-spacing:.35em;font-weight:600;color:#dedbd3;text-decoration:none}
-.header-note{color:#969188;font-size:9px;letter-spacing:.24em;text-transform:uppercase}
-.header-note:before{content:"";display:inline-block;width:27px;height:1px;background:#777169;vertical-align:middle;margin-right:15px;opacity:.65}
-main{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%;max-width:1500px;margin:auto;padding:40px clamp(20px,4.8vw,70px) 40px;position:relative;z-index:2}
-.intro{text-align:center;margin-top:4px}
-.kicker{font-size:10px;letter-spacing:.45em;text-transform:uppercase;color:#a89e90;font-weight:500;margin:0 0 12px}
-h1{font-family:"Cormorant Garamond",Georgia,serif;font-weight:400;font-size:clamp(76px,10vw,146px);letter-spacing:.13em;padding-left:.13em;line-height:.87;color:#eeeae2;margin:0;text-shadow:0 5px 48px rgba(0,0,0,.28)}
-.under-title{font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-size:clamp(25px,2.8vw,36px);line-height:1;color:#c9c0af;letter-spacing:.035em;margin:18px 0 0}
-.gallery{position:relative;width:min(900px,100%);height:395px;margin:30px auto 0;display:flex;align-items:center;justify-content:center;perspective:1000px}
-.gallery:before{content:"";position:absolute;z-index:-1;left:12%;right:11%;bottom:0;height:80px;pointer-events:none;background:radial-gradient(ellipse,rgba(0,0,0,.8),transparent 72%);filter:blur(22px)}
-.gallery:after{content:"";position:absolute;z-index:-2;left:10%;right:10%;top:8%;bottom:9%;background:radial-gradient(ellipse at 48% 52%,rgba(192,182,164,.11),transparent 67%);filter:blur(25px)}
-.exhibit{margin:0;position:relative;display:block;flex:0 0 auto;will-change:transform;animation:arrive 1.2s both cubic-bezier(.21,.7,.14,1);transform-style:preserve-3d}
-.exhibit img{width:100%;height:auto;display:block;user-select:none;-webkit-user-drag:none}
-.exhibit-owl{width:340px;padding:17px;background:linear-gradient(160deg,#f6f2e9,#e5dfd2);border:1px solid #c3bcb0;box-shadow:0 6px 0 rgba(240,236,224,.06),0 26px 75px rgba(0,0,0,.68),0 0 90px rgba(215,203,178,.055);margin-left:-165px;z-index:3;transform:rotate(-2deg) translate3d(calc(var(--ex)*-.52),calc(var(--ey)*-.45),32px)}
-.exhibit-owl img{background:#fff;aspect-ratio:450/455;object-fit:contain;filter:none}
-.exhibit-owl:before{content:"";position:absolute;inset:-7px;border:1px solid rgba(221,211,193,.14);pointer-events:none}
-.exhibit-eye{position:absolute;width:205px;padding:9px;background:#cac09e;border:1px solid #a59e87;z-index:2;right:7%;top:16%;transform:rotate(4deg) translate3d(calc(var(--ex)*.27),calc(var(--ey)*.36),-60px);box-shadow:0 18px 58px rgba(0,0,0,.69),0 0 0 7px rgba(237,234,222,.018);animation-delay:.12s}
-.exhibit-eye img{aspect-ratio:525/600;object-fit:cover;filter:none}
-.exhibit-eye:after{content:"";position:absolute;inset:-14px;border:1px solid rgba(203,196,178,.08);pointer-events:none}
-.exhibit-meta{position:absolute;left:-138px;bottom:5px;width:130px;text-align:right}
-.exhibit-meta strong,.exhibit-meta small{display:block;text-transform:uppercase;font-weight:500}
-.exhibit-meta strong{font-size:9px;letter-spacing:.23em;color:#beb3a3}
-.exhibit-meta small{font-size:8px;line-height:1.7;letter-spacing:.08em;color:#6f6b63;margin-top:8px}
-.eye-meta{position:absolute;top:calc(100% + 20px);left:0;right:0;text-align:center;font-size:8px;text-transform:uppercase;letter-spacing:.2em;color:#868177;white-space:nowrap}
-.closing{text-align:center;max-width:720px;margin:23px auto 0;padding:29px 22px 0;border-top:1px solid rgba(220,210,189,.17)}
-.closing .notice-title{font-family:Manrope,Arial,sans-serif;font-size:9px;line-height:1.5;text-transform:uppercase;letter-spacing:.31em;font-weight:500;color:#b9ae9e;margin:0 auto 18px}
-.closing .declaration{font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(19px,1.85vw,24px);line-height:1.38;letter-spacing:.012em;font-weight:400;color:#c5beb3;margin:0 auto 16px}
-.closing .declaration-secondary{font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(18px,1.65vw,22px);line-height:1.38;letter-spacing:.012em;font-weight:400;color:#aaa49a;margin:0 auto 16px}
-.closing .purpose{font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(18px,1.65vw,22px);line-height:1.38;font-style:italic;letter-spacing:.012em;color:#c0b7a5;margin:0 auto 27px}
-
-.mail{display:inline-block;position:relative;padding:0 3px 7px;text-decoration:none;font-size:12px;letter-spacing:.14em;font-weight:500;color:#e8e0d2;border-bottom:1px solid rgba(232,224,210,.43);transition:color .25s,border-color .25s}
-.mail:hover{color:white;border-color:white}
-.mail:focus-visible{outline:2px solid #e9dcc0;outline-offset:6px}
-.footer{position:relative;z-index:3;width:100%;max-width:1650px;margin:0 auto;padding:0 clamp(28px,6vw,96px) 30px;display:flex;justify-content:space-between;align-items:center;gap:20px;color:#75716a;font-size:9px;letter-spacing:.2em;text-transform:uppercase}
-.footer em{font-family:"Cormorant Garamond",Georgia,serif;font-size:16px;letter-spacing:.065em;font-weight:400;text-transform:none;color:#9c9489}
-@keyframes arrive{from{opacity:0;filter:blur(5px)}to{opacity:1;filter:blur(0)}}
-@media(hover:hover) and (pointer:fine){.exhibit-owl:hover{box-shadow:0 6px 0 rgba(240,236,224,.06),0 36px 100px rgba(0,0,0,.75),0 0 100px rgba(215,203,178,.10)}}
-@media(min-width:1400px){main{padding-top:37px;padding-bottom:39px}.gallery{height:410px}.exhibit-owl{width:356px}.exhibit-eye{width:215px}}
-@media(max-width:950px){.gallery{width:750px;max-width:100%;height:395px}.exhibit-owl{width:310px;margin-left:-100px}.exhibit-eye{width:185px;right:2%;top:18%}.exhibit-meta{left:-117px;width:110px}}
-@media(max-width:700px){.header{padding:29px 28px 0}.header-note{display:none}main{padding:51px 20px 45px}.kicker{font-size:9px;letter-spacing:.28em}h1{font-size:clamp(50px,12vw,83px);letter-spacing:.055em;padding-left:.055em}.under-title{font-size:28px;margin-top:15px}.gallery{height:530px;width:min(440px,100%);margin-top:18px;display:block}.exhibit-owl{width:min(68vw,295px);position:absolute;left:3%;top:14px;margin:0;padding:11px;transform:rotate(-2deg) translate3d(calc(var(--ex)*-.25),calc(var(--ey)*-.25),0)}.exhibit-eye{width:min(35vw,145px);right:0;top:auto;bottom:18px;padding:6px;transform:rotate(4deg) translate3d(calc(var(--ex)*.2),calc(var(--ey)*.2),0)}.exhibit-meta{position:absolute;bottom:-38px;left:1px;width:auto;text-align:left}.exhibit-meta strong{font-size:8px}.exhibit-meta small{display:none}.eye-meta{font-size:7px;top:calc(100% + 15px)}.closing{margin:21px auto 0;max-width:550px;padding:25px 4px 0}.closing .declaration{font-size:21px}.closing .declaration-secondary,.closing .purpose{font-size:20px}.footer{padding:0 28px 27px}.footer span:last-child{display:none}}
-@media(max-width:460px){main{padding:45px 18px 36px}h1{font-size:clamp(45px,11.6vw,59px)}.under-title{font-size:26px}.gallery{height:510px;margin-top:23px}.exhibit-owl{width:min(70vw,275px);left:1%}.exhibit-eye{width:min(36vw,139px);right:-1%;bottom:16px}.closing{margin-top:16px;padding-top:24px}.closing .notice-title{font-size:8px;margin-bottom:16px}.closing .declaration,.closing .declaration-secondary,.closing .purpose{font-size:19px;line-height:1.35}.closing .purpose{margin-bottom:22px}.footer{font-size:8px}.footer em{font-size:14px}}
-@media(max-width:360px){h1{font-size:42px}.gallery{height:475px}.exhibit-owl{width:230px}.exhibit-eye{width:114px}.closing{margin-top:24px}.footer em{display:none}}
-@media(max-height:740px) and (min-width:701px){.header{padding-top:24px}main{padding:15px 30px}.gallery{height:325px;margin-top:14px}.exhibit-owl{width:280px}.exhibit-eye{width:170px}.closing{margin-top:16px}.closing .purpose{margin-bottom:19px}.footer{padding-bottom:21px}}
-@media(prefers-reduced-motion:reduce){.exhibit{animation:none;will-change:auto}.ambient,.mail{transition:none}.exhibit-owl{transform:rotate(-2deg)}.exhibit-eye{transform:rotate(4deg)}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070a0d">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="ILLUMINATI — a private philosophical circle dedicated to knowledge, independent thought and inner discipline. Lux intus, lux mundi.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ILLUMINATI — Lux intus, lux mundi">
+  <meta property="og:description" content="Knowledge. Independent thought. Inner discipline.">
+  <meta property="og:url" content="https://illuminati.cv/">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <title>ILLUMINATI — Lux intus, lux mundi</title>
+  <style>
+    :root{color-scheme:dark;--bg:#070a0d;--cream:#f1ece2;--silver:#d2cabe;--muted:#a9a69f;--accent:#d1b894;--mx:0px;--my:0px}
+    *,*::before,*::after{box-sizing:border-box}
+    html{min-width:320px}
+    body{margin:0;background:var(--bg);color:var(--cream);font-family:Manrope,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+    a{color:inherit}
+    ::selection{background:rgba(195,177,142,.40);color:#fff}
+    .experience{isolation:isolate;position:relative;min-height:100vh;min-height:100svh;overflow:hidden;display:flex;flex-direction:column;background:#070a0d}
+    .ether,.sky-lines,.mist,.veil,.grain{position:absolute;inset:0;pointer-events:none}
+    .ether{z-index:-9;background:
+      radial-gradient(ellipse 52% 64% at 50% 40%,rgba(53,66,73,.18) 0%,rgba(13,21,27,.12) 48%,transparent 90%),
+      radial-gradient(ellipse 30% 45% at 3% 35%,rgba(64,62,60,.13),transparent 82%),
+      radial-gradient(ellipse 32% 50% at 97% 36%,rgba(57,60,67,.16),transparent 80%),
+      linear-gradient(118deg,#080b10,#0d1013 45%,#080b0f 69%,#06090c)}
+    .sky-lines{z-index:-8;inset:-25%;opacity:.31;background:repeating-radial-gradient(ellipse 48% 55% at 50% 45%,transparent 0 106px,rgba(164,168,173,.075) 107px,transparent 108px,transparent 165px);
+      transform:perspective(900px) rotateX(10deg) translate3d(calc(var(--mx)*.12),calc(var(--my)*.08),0)}
+    .mist{z-index:-6;inset:-20%;background:radial-gradient(ellipse 36% 23% at 50% 14%,rgba(203,209,211,.07),transparent 84%),radial-gradient(ellipse 26% 38% at 20% 62%,rgba(183,175,161,.075),transparent 85%),radial-gradient(ellipse 32% 34% at 82% 55%,rgba(196,194,191,.06),transparent 86%);filter:blur(35px);animation:breathe 14s ease-in-out infinite alternate}
+    .glyph{position:absolute;z-index:-4;pointer-events:none;aspect-ratio:1/1;display:grid;place-items:center;filter:drop-shadow(0 0 50px rgba(205,208,207,.12));will-change:transform}
+    .glyph img{width:100%;height:auto;display:block;object-fit:contain;opacity:.63;user-select:none;-webkit-user-drag:none;animation:levitate 15s ease-in-out infinite alternate}
+    .glyph-owl{width:clamp(280px,32vw,510px);left:max(-115px,calc(50% - 915px));top:clamp(125px,25vh,280px);transform:translate3d(calc(var(--mx)*-.60),calc(var(--my)*-.42),0) rotate(-7deg)}
+    .glyph-eye{width:clamp(285px,35vw,565px);right:max(-120px,calc(50% - 950px));top:clamp(120px,20vh,245px);transform:translate3d(calc(var(--mx)*.44),calc(var(--my)*.35),0) rotate(6deg)}
+    .glyph-eye img{opacity:.52;animation-delay:-7.5s;animation-duration:18s}
+    .glyph-owl::after,.glyph-eye::after{content:"";position:absolute;z-index:-1;inset:5%;border-radius:50%;background:radial-gradient(circle,rgba(200,201,194,.08),transparent 68%);filter:blur(24px)}
+    .veil{z-index:-2;background:radial-gradient(ellipse min(45vw,580px) 57% at 50% 47%,rgba(5,8,11,.81),rgba(7,10,13,.44) 64%,transparent 100%),
+        linear-gradient(0deg,#070a0d 0%,transparent 17%,transparent 78%,rgba(7,10,13,.42) 100%);}
+    .grain{z-index:6;opacity:.17;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.72' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.18'/%3E%3C/svg%3E")}
+    .masthead{position:relative;z-index:5;display:flex;align-items:center;justify-content:space-between;gap:18px;width:100%;max-width:1760px;margin:0 auto;padding:36px 5.2vw 0}
+    .brand{font-size:10px;font-weight:600;letter-spacing:.35em;color:#d9d4ca;text-decoration:none}
+    .mast-note{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:#898b8b}
+    .mast-note:before{content:"";display:inline-block;width:25px;height:1px;background:rgba(196,189,174,.4);vertical-align:middle;margin-right:13px}
+    main{position:relative;z-index:3;flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:80px 24px 70px;max-width:900px;margin:auto;width:100%}
+    .overline{font-size:10px;letter-spacing:.35em;color:#c0b7a9;font-weight:500;text-transform:uppercase;margin:0 0 19px}
+    h1{font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(76px,10.4vw,145px);font-weight:400;line-height:.83;letter-spacing:.10em;padding-left:.10em;margin:0;color:#f4efe5;text-shadow:0 0 43px rgba(226,223,215,.12)}
+    .motto{font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(31px,3.8vw,48px);font-weight:400;font-style:italic;line-height:1.04;letter-spacing:.035em;margin:22px 0 0;color:#dbcbb6}
+    .motif{width:195px;height:18px;position:relative;margin:25px auto 23px;display:flex;align-items:center;justify-content:center;gap:12px}
+    .motif:before,.motif:after{content:"";width:78px;height:1px;background:linear-gradient(90deg,transparent,rgba(219,201,167,.44))}
+    .motif:after{transform:rotate(180deg)}
+    .motif span{width:5px;height:5px;border:1px solid rgba(215,195,160,.8);transform:rotate(45deg);flex-shrink:0}
+    .notice{max-width:690px}
+    .notice h2{margin:0 0 20px;font-size:10px;font-weight:500;letter-spacing:.31em;color:#d4c6b1;text-transform:uppercase}
+    .notice p{font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(21px,2.1vw,25px);font-weight:400;line-height:1.3;letter-spacing:.005em;color:#d0cbc3;margin:0 auto 15px}
+    .notice .secondary{color:#aaa9a5;font-size:clamp(20px,1.95vw,23px)}
+    .notice .purpose{font-style:italic;color:#c9b9a2;margin-top:8px;font-size:clamp(20px,1.95vw,23px)}
+    .address{margin-top:22px;display:inline-block;text-decoration:none;border-bottom:1px solid rgba(220,204,182,.42);padding:0 2px 9px;color:#e5ded2;font-size:12px;font-weight:500;letter-spacing:.17em;transition:color .25s,border-color .25s,transform .25s}
+    .address:hover{color:white;border-color:white;transform:translateY(-2px)}
+    .address:focus-visible{outline:2px solid #e8dfd3;outline-offset:6px}
+    footer{position:relative;z-index:5;width:100%;max-width:1760px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:0 5.2vw 29px;color:#797e7e;font-size:8px;letter-spacing:.2em;text-transform:uppercase}
+    footer em{font-family:"Cormorant Garamond",Georgia,serif;font-size:17px;font-weight:400;color:#a49a8b;letter-spacing:.03em;text-transform:none}
+    @keyframes levitate{from{transform:translateY(12px)}to{transform:translateY(-14px)}}
+    @keyframes breathe{from{opacity:.65;transform:translateY(0)}to{opacity:1;transform:translateY(-16px)}}
+    @media(min-width:1650px){.glyph-owl{left:calc(50% - 920px)}.glyph-eye{right:calc(50% - 930px)}}
+    @media(max-width:1050px){.glyph-owl{left:-140px;top:24vh;opacity:.8}.glyph-eye{right:-170px;top:23vh;opacity:.8}main{max-width:760px}.veil{background:radial-gradient(ellipse 54% 60% at 50% 46%,rgba(5,8,11,.9),rgba(7,10,13,.58) 64%,transparent 100%)}}
+    @media(max-width:690px){
+      .masthead{padding:27px 28px 0}.mast-note{display:none}
+      .glyph-owl{width:57vw;max-width:260px;left:-10vw;top:89px;opacity:.85;transform:rotate(-9deg)}
+      .glyph-eye{width:59vw;max-width:265px;right:-11vw;top:107px;opacity:.8;transform:rotate(8deg)}
+      .glyph img{opacity:.60;animation-duration:16s}.glyph-eye img{opacity:.57}
+      .veil{background:linear-gradient(180deg,rgba(6,9,12,.06) 0%,rgba(7,10,13,.07) 16%,rgba(7,10,13,.94) 39%,rgba(7,10,13,.82) 85%,#070a0d 100%)}
+      main{padding:295px 25px 55px;justify-content:flex-start}
+      .overline{font-size:8px;letter-spacing:.27em;margin-bottom:15px}
+      h1{font-size:clamp(50px,12.5vw,81px);letter-spacing:.065em;padding-left:.065em}
+      .motto{font-size:clamp(28px,6.6vw,37px);margin-top:18px}
+      .motif{margin:19px auto 17px;width:150px}.motif:before,.motif:after{width:58px}
+      .notice h2{font-size:9px;margin-bottom:17px;letter-spacing:.25em}
+      .notice p{font-size:21px;line-height:1.32;margin-bottom:16px}
+      .notice .secondary,.notice .purpose{font-size:20px}
+      .address{margin-top:18px;font-size:11px;letter-spacing:.13em}
+      footer{padding:0 28px 28px;font-size:8px;letter-spacing:.08em}footer span:last-child{display:none}footer em{font-size:14px}
+    }
+    @media(max-width:380px){main{padding-top:270px;padding-left:17px;padding-right:17px}h1{font-size:47px}.notice p{font-size:19px}.notice .secondary,.notice .purpose{font-size:19px}}
+    @media(max-height:780px) and (min-width:691px){main{padding-top:42px;padding-bottom:38px}.overline{margin-bottom:13px}.motto{margin-top:15px}.motif{margin:16px auto 14px}.notice h2{margin-bottom:12px}.notice p{font-size:21px;margin-bottom:11px}.notice .secondary,.notice .purpose{font-size:20px}.address{margin-top:10px}}
+    @media(prefers-reduced-motion:reduce){.glyph,.glyph img,.mist,.sky-lines{animation:none!important;transform:none!important;will-change:auto!important}.address{transition:none}}
+  </style>
 </head>
 <body>
-<div class="site" id="site">
-<div class="architecture" aria-hidden="true"></div><div class="ambient" aria-hidden="true"></div>
-<header class="header"><a class="brand" href="/" aria-label="ILLUMINATI, homepage">ILLUMINATI</a><span class="header-note">A private philosophical circle</span></header>
-<main>
-<div class="intro"><p class="kicker">The pursuit of wisdom</p><h1>ILLUMINATI</h1><p class="under-title">Lux intus, lux mundi</p></div>
-<div class="gallery" aria-label="Two independent historical symbols">
-<figure class="exhibit exhibit-owl">
-<img src="/assets/minerval-1788.png" width="450" height="455" alt="Historical 1788 Minerval emblem: the owl of Minerva perched on an open book inside a wreath, reproduced from a period engraving" fetchpriority="high">
-<figcaption class="exhibit-meta"><strong>Minerva</strong><small>Engraving<br>c. 1788</small></figcaption>
-</figure>
-<figure class="exhibit exhibit-eye">
-<img src="/assets/eye-dollar-engraving.jpg" width="525" height="600" alt="Eye of Providence in a triangle, in the original engraved style of the United States dollar bill">
-<figcaption class="eye-meta">The eye of providence</figcaption>
-</figure>
-</div>
-<section class="closing" aria-labelledby="notice-heading">
-<h2 class="notice-title" id="notice-heading">A Word Before You Write</h2>
-<p class="declaration">The Order of the Illuminati cannot make you wealthy, famous, or powerful. It does not control the world, direct political affairs, or govern the entertainment industry.</p>
-<p class="declaration-secondary">If these are the promises you seek in joining us, you have come to the wrong place. We ask that you do not contact us for such reasons.</p>
-<p class="purpose">Our purpose lies elsewhere: in the pursuit of knowledge, independent thought, and inner discipline.</p>
-<a href="mailto:contact@illuminati.cv" class="mail" aria-label="Send an email to contact@illuminati.cv">contact@illuminati.cv</a>
-</section>
-</main>
-<footer class="footer"><span>Knowledge · Discernment · Inner light</span><em>Sapientia in silentio</em><span>Illuminati © 2026</span></footer>
+<div class="experience" id="experience">
+  <div class="ether" aria-hidden="true"></div>
+  <div class="sky-lines" aria-hidden="true"></div>
+  <div class="mist" aria-hidden="true"></div>
+  <div class="glyph glyph-owl" aria-hidden="true"><img src="/assets/owl-transparent.png" alt="" width="503" height="537" fetchpriority="high"></div>
+  <div class="glyph glyph-eye" aria-hidden="true"><img src="/assets/eye-transparent.png" alt="" width="513" height="508" fetchpriority="high"></div>
+  <div class="veil" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="masthead"><a class="brand" href="/" aria-label="ILLUMINATI home">ILLUMINATI</a><span class="mast-note">The pursuit of knowledge</span></header>
+  <main>
+    <p class="overline">A private philosophical circle</p>
+    <h1>ILLUMINATI</h1>
+    <p class="motto">Lux intus, lux mundi</p>
+    <div class="motif" aria-hidden="true"><span></span></div>
+    <section class="notice" aria-labelledby="notice-heading">
+      <h2 id="notice-heading">A Word Before You Write</h2>
+      <p>The Order of the Illuminati cannot make you wealthy, famous, or powerful. It does not control the world, direct political affairs, or govern the entertainment industry.</p>
+      <p class="secondary">If these are the promises you seek in joining us, you have come to the wrong place. We ask that you do not contact us for such reasons.</p>
+      <p class="purpose">Our purpose lies elsewhere: in the pursuit of knowledge, independent thought, and inner discipline.</p>
+    </section>
+    <a class="address" href="mailto:contact@illuminati.cv">contact@illuminati.cv</a>
+  </main>
+  <footer><span>KNOWLEDGE · DISCERNMENT · INNER LIGHT</span><em>Sapientia in silentio</em><span>MMXXVI</span></footer>
 </div>
 <script>
 (function(){
-const root=document.getElementById('site');
-const reduce=matchMedia('(prefers-reduced-motion: reduce)');
-const fine=matchMedia('(hover:hover) and (pointer:fine)');
-if(!root||reduce.matches||!fine.matches)return;
-let x=0,y=0,tx=0,ty=0,raf=0;
-function run(){x+=(tx-x)*.07;y+=(ty-y)*.07;root.style.setProperty('--ex',x.toFixed(2)+'px');root.style.setProperty('--ey',y.toFixed(2)+'px');if(Math.abs(tx-x)+Math.abs(ty-y)>.15)raf=requestAnimationFrame(run);else raf=0;}
-root.addEventListener('pointermove',e=>{tx=(e.clientX/innerWidth-.5)*14;ty=(e.clientY/innerHeight-.5)*12;if(!raf)raf=requestAnimationFrame(run)},{passive:true});
-root.addEventListener('pointerleave',()=>{tx=0;ty=0;if(!raf)raf=requestAnimationFrame(run)});
+const root=document.getElementById('experience');
+if(!root||matchMedia('(prefers-reduced-motion: reduce)').matches||!matchMedia('(hover: hover) and (pointer: fine)').matches)return;
+let mx=0,my=0,tx=0,ty=0,frame=0;
+function animate(){mx+=(tx-mx)*.075;my+=(ty-my)*.075;root.style.setProperty('--mx',mx.toFixed(2)+'px');root.style.setProperty('--my',my.toFixed(2)+'px');if(Math.abs(mx-tx)+Math.abs(my-ty)>.12){frame=requestAnimationFrame(animate)}else frame=0}
+root.addEventListener('pointermove',e=>{tx=(e.clientX/innerWidth-.5)*27;ty=(e.clientY/innerHeight-.5)*18;if(!frame)frame=requestAnimationFrame(animate)},{passive:true});
+root.addEventListener('pointerleave',()=>{tx=0;ty=0;if(!frame)frame=requestAnimationFrame(animate)});
 })();
 </script>
-</body>
-</html>
+</body></html>
