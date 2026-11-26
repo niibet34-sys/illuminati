@@ -52,8 +52,12 @@ h1{font-family:"Cormorant Garamond",Georgia,serif;font-weight:400;font-size:clam
 .exhibit-meta strong{font-size:9px;letter-spacing:.23em;color:#beb3a3}
 .exhibit-meta small{font-size:8px;line-height:1.7;letter-spacing:.08em;color:#6f6b63;margin-top:8px}
 .eye-meta{position:absolute;top:calc(100% + 20px);left:0;right:0;text-align:center;font-size:8px;text-transform:uppercase;letter-spacing:.2em;color:#868177;white-space:nowrap}
-.closing{text-align:center;max-width:630px;margin:17px auto 0}
-.closing p{font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(18px,1.8vw,23px);line-height:1.32;letter-spacing:.025em;font-weight:400;color:#aaa49a;margin:0 auto 22px}
+.closing{text-align:center;max-width:720px;margin:23px auto 0;padding:29px 22px 0;border-top:1px solid rgba(220,210,189,.17)}
+.closing .notice-title{font-family:Manrope,Arial,sans-serif;font-size:9px;line-height:1.5;text-transform:uppercase;letter-spacing:.31em;font-weight:500;color:#b9ae9e;margin:0 auto 18px}
+.closing .declaration{font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(19px,1.85vw,24px);line-height:1.38;letter-spacing:.012em;font-weight:400;color:#c5beb3;margin:0 auto 16px}
+.closing .declaration-secondary{font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(18px,1.65vw,22px);line-height:1.38;letter-spacing:.012em;font-weight:400;color:#aaa49a;margin:0 auto 16px}
+.closing .purpose{font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(18px,1.65vw,22px);line-height:1.38;font-style:italic;letter-spacing:.012em;color:#c0b7a5;margin:0 auto 27px}
+
 .mail{display:inline-block;position:relative;padding:0 3px 7px;text-decoration:none;font-size:12px;letter-spacing:.14em;font-weight:500;color:#e8e0d2;border-bottom:1px solid rgba(232,224,210,.43);transition:color .25s,border-color .25s}
 .mail:hover{color:white;border-color:white}
 .mail:focus-visible{outline:2px solid #e9dcc0;outline-offset:6px}
@@ -63,10 +67,10 @@ h1{font-family:"Cormorant Garamond",Georgia,serif;font-weight:400;font-size:clam
 @media(hover:hover) and (pointer:fine){.exhibit-owl:hover{box-shadow:0 6px 0 rgba(240,236,224,.06),0 36px 100px rgba(0,0,0,.75),0 0 100px rgba(215,203,178,.10)}}
 @media(min-width:1400px){main{padding-top:37px;padding-bottom:39px}.gallery{height:410px}.exhibit-owl{width:356px}.exhibit-eye{width:215px}}
 @media(max-width:950px){.gallery{width:750px;max-width:100%;height:395px}.exhibit-owl{width:310px;margin-left:-100px}.exhibit-eye{width:185px;right:2%;top:18%}.exhibit-meta{left:-117px;width:110px}}
-@media(max-width:700px){.header{padding:29px 28px 0}.header-note{display:none}main{padding:51px 20px 45px}.kicker{font-size:9px;letter-spacing:.28em}h1{font-size:clamp(50px,12vw,83px);letter-spacing:.055em;padding-left:.055em}.under-title{font-size:28px;margin-top:15px}.gallery{height:530px;width:min(440px,100%);margin-top:18px;display:block}.exhibit-owl{width:min(68vw,295px);position:absolute;left:3%;top:14px;margin:0;padding:11px;transform:rotate(-2deg) translate3d(calc(var(--ex)*-.25),calc(var(--ey)*-.25),0)}.exhibit-eye{width:min(35vw,145px);right:0;top:auto;bottom:18px;padding:6px;transform:rotate(4deg) translate3d(calc(var(--ex)*.2),calc(var(--ey)*.2),0)}.exhibit-meta{position:absolute;bottom:-38px;left:1px;width:auto;text-align:left}.exhibit-meta strong{font-size:8px}.exhibit-meta small{display:none}.eye-meta{font-size:7px;top:calc(100% + 15px)}.closing{margin:16px auto 0;max-width:350px}.closing p{font-size:21px}.footer{padding:0 28px 27px}.footer span:last-child{display:none}}
-@media(max-width:460px){main{padding:45px 18px 36px}h1{font-size:clamp(45px,11.6vw,59px)}.under-title{font-size:26px}.gallery{height:510px;margin-top:23px}.exhibit-owl{width:min(70vw,275px);left:1%}.exhibit-eye{width:min(36vw,139px);right:-1%;bottom:16px}.closing{margin-top:13px}.closing p{font-size:19px;margin-bottom:20px}.footer{font-size:8px}.footer em{font-size:14px}}
+@media(max-width:700px){.header{padding:29px 28px 0}.header-note{display:none}main{padding:51px 20px 45px}.kicker{font-size:9px;letter-spacing:.28em}h1{font-size:clamp(50px,12vw,83px);letter-spacing:.055em;padding-left:.055em}.under-title{font-size:28px;margin-top:15px}.gallery{height:530px;width:min(440px,100%);margin-top:18px;display:block}.exhibit-owl{width:min(68vw,295px);position:absolute;left:3%;top:14px;margin:0;padding:11px;transform:rotate(-2deg) translate3d(calc(var(--ex)*-.25),calc(var(--ey)*-.25),0)}.exhibit-eye{width:min(35vw,145px);right:0;top:auto;bottom:18px;padding:6px;transform:rotate(4deg) translate3d(calc(var(--ex)*.2),calc(var(--ey)*.2),0)}.exhibit-meta{position:absolute;bottom:-38px;left:1px;width:auto;text-align:left}.exhibit-meta strong{font-size:8px}.exhibit-meta small{display:none}.eye-meta{font-size:7px;top:calc(100% + 15px)}.closing{margin:21px auto 0;max-width:550px;padding:25px 4px 0}.closing .declaration{font-size:21px}.closing .declaration-secondary,.closing .purpose{font-size:20px}.footer{padding:0 28px 27px}.footer span:last-child{display:none}}
+@media(max-width:460px){main{padding:45px 18px 36px}h1{font-size:clamp(45px,11.6vw,59px)}.under-title{font-size:26px}.gallery{height:510px;margin-top:23px}.exhibit-owl{width:min(70vw,275px);left:1%}.exhibit-eye{width:min(36vw,139px);right:-1%;bottom:16px}.closing{margin-top:16px;padding-top:24px}.closing .notice-title{font-size:8px;margin-bottom:16px}.closing .declaration,.closing .declaration-secondary,.closing .purpose{font-size:19px;line-height:1.35}.closing .purpose{margin-bottom:22px}.footer{font-size:8px}.footer em{font-size:14px}}
 @media(max-width:360px){h1{font-size:42px}.gallery{height:475px}.exhibit-owl{width:230px}.exhibit-eye{width:114px}.closing{margin-top:24px}.footer em{display:none}}
-@media(max-height:740px) and (min-width:701px){.header{padding-top:24px}main{padding:15px 30px}.gallery{height:325px;margin-top:14px}.exhibit-owl{width:280px}.exhibit-eye{width:170px}.closing{margin-top:12px}.closing p{margin-bottom:14px}.footer{padding-bottom:21px}}
+@media(max-height:740px) and (min-width:701px){.header{padding-top:24px}main{padding:15px 30px}.gallery{height:325px;margin-top:14px}.exhibit-owl{width:280px}.exhibit-eye{width:170px}.closing{margin-top:16px}.closing .purpose{margin-bottom:19px}.footer{padding-bottom:21px}}
 @media(prefers-reduced-motion:reduce){.exhibit{animation:none;will-change:auto}.ambient,.mail{transition:none}.exhibit-owl{transform:rotate(-2deg)}.exhibit-eye{transform:rotate(4deg)}}
 </style>
 </head>
@@ -86,7 +90,13 @@ h1{font-family:"Cormorant Garamond",Georgia,serif;font-weight:400;font-size:clam
 <figcaption class="eye-meta">The eye of providence</figcaption>
 </figure>
 </div>
-<div class="closing"><p>An independent circle devoted to knowledge, discernment, and the illumination of the mind.</p><a href="mailto:contact@illuminati.cv" class="mail">contact@illuminati.cv</a></div>
+<section class="closing" aria-labelledby="notice-heading">
+<h2 class="notice-title" id="notice-heading">A Word Before You Write</h2>
+<p class="declaration">The Order of the Illuminati cannot make you wealthy, famous, or powerful. It does not control the world, direct political affairs, or govern the entertainment industry.</p>
+<p class="declaration-secondary">If these are the promises you seek in joining us, you have come to the wrong place. We ask that you do not contact us for such reasons.</p>
+<p class="purpose">Our purpose lies elsewhere: in the pursuit of knowledge, independent thought, and inner discipline.</p>
+<a href="mailto:contact@illuminati.cv" class="mail" aria-label="Send an email to contact@illuminati.cv">contact@illuminati.cv</a>
+</section>
 </main>
 <footer class="footer"><span>Knowledge · Discernment · Inner light</span><em>Sapientia in silentio</em><span>Illuminati © 2026</span></footer>
 </div>
