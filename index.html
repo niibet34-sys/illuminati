@@ -41,7 +41,7 @@
     .veil{z-index:-2;background:radial-gradient(ellipse min(45vw,580px) 57% at 50% 47%,rgba(5,8,11,.81),rgba(7,10,13,.44) 64%,transparent 100%),
         linear-gradient(0deg,#070a0d 0%,transparent 17%,transparent 78%,rgba(7,10,13,.42) 100%);}
     .grain{z-index:6;opacity:.17;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.72' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.18'/%3E%3C/svg%3E")}
-    .masthead{position:relative;z-index:5;display:flex;align-items:center;justify-content:space-between;gap:18px;width:100%;max-width:1760px;margin:0 auto;padding:36px 5.2vw 0}
+    .masthead{position:relative;z-index:5;display:flex;align-items:center;justify-content:flex-end;gap:18px;width:100%;max-width:1760px;margin:0 auto;padding:36px 5.2vw 0}
     .brand{font-size:10px;font-weight:600;letter-spacing:.35em;color:#d9d4ca;text-decoration:none}
     .mast-note{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:#898b8b}
     .mast-note:before{content:"";display:inline-block;width:25px;height:1px;background:rgba(196,189,174,.4);vertical-align:middle;margin-right:13px}
@@ -74,8 +74,7 @@
       .glyph img{opacity:.44;animation-duration:16s}.glyph-eye img{opacity:.39}
       .veil{background:linear-gradient(180deg,rgba(6,9,12,.06) 0%,rgba(7,10,13,.07) 16%,rgba(7,10,13,.94) 39%,rgba(7,10,13,.82) 85%,#070a0d 100%)}
       main{padding:295px 25px 55px;justify-content:flex-start}
-      .overline{font-size:8px;letter-spacing:.27em;margin-bottom:15px}
-      h1{font-size:clamp(50px,12.5vw,81px);letter-spacing:.065em;padding-left:.065em}
+        h1{font-size:clamp(50px,12.5vw,81px);letter-spacing:.065em;padding-left:.065em}
       .motto{font-size:clamp(28px,6.6vw,37px);margin-top:18px}
       .motif{margin:19px auto 17px;width:150px}.motif:before,.motif:after{width:58px}
       .notice h2{font-size:9px;margin-bottom:17px;letter-spacing:.25em}
@@ -85,7 +84,7 @@
       footer{padding:0 28px 28px;font-size:8px;letter-spacing:.08em}footer span:last-child{display:none}footer em{font-size:14px}
     }
     @media(max-width:380px){main{padding-top:270px;padding-left:17px;padding-right:17px}h1{font-size:47px}.notice p{font-size:19px}.notice .secondary,.notice .purpose{font-size:19px}}
-    @media(max-height:780px) and (min-width:691px){main{padding-top:42px;padding-bottom:38px}.overline{margin-bottom:13px}.motto{margin-top:15px}.motif{margin:16px auto 14px}.notice h2{margin-bottom:12px}.notice p{font-size:21px;margin-bottom:11px}.notice .secondary,.notice .purpose{font-size:20px}.address{margin-top:10px}}
+    @media(max-height:780px) and (min-width:691px){main{padding-top:42px;padding-bottom:38px}.motto{margin-top:15px}.motif{margin:16px auto 14px}.notice h2{margin-bottom:12px}.notice p{font-size:21px;margin-bottom:11px}.notice .secondary,.notice .purpose{font-size:20px}.address{margin-top:10px}}
     @media(prefers-reduced-motion:reduce){.glyph,.glyph img,.mist,.sky-lines{animation:none!important;transform:none!important;will-change:auto!important}.address{transition:none}}
   </style>
 </head>
@@ -98,9 +97,8 @@
   <div class="glyph glyph-eye" aria-hidden="true"><img src="/assets/eye-transparent.png" alt="" width="513" height="508" fetchpriority="high"></div>
   <div class="veil" aria-hidden="true"></div>
   <div class="grain" aria-hidden="true"></div>
-  <header class="masthead"><a class="brand" href="/" aria-label="ILLUMINATI home">ILLUMINATI</a><span class="mast-note">The pursuit of knowledge</span></header>
+  <header class="masthead"><span class="mast-note">The pursuit of knowledge</span></header>
   <main>
-    <p class="overline">A private philosophical circle</p>
     <h1>ILLUMINATI</h1>
     <p class="motto">Lux intus, lux mundi</p>
     <div class="motif" aria-hidden="true"><span></span></div>
