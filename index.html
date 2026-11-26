@@ -33,10 +33,10 @@
       transform:perspective(900px) rotateX(10deg) translate3d(calc(var(--mx)*.12),calc(var(--my)*.08),0)}
     .mist{z-index:-6;inset:-20%;background:radial-gradient(ellipse 36% 23% at 50% 14%,rgba(203,209,211,.07),transparent 84%),radial-gradient(ellipse 26% 38% at 20% 62%,rgba(183,175,161,.075),transparent 85%),radial-gradient(ellipse 32% 34% at 82% 55%,rgba(196,194,191,.06),transparent 86%);filter:blur(35px);animation:breathe 14s ease-in-out infinite alternate}
     .glyph{position:absolute;z-index:-4;pointer-events:none;aspect-ratio:1/1;display:grid;place-items:center;filter:drop-shadow(0 0 50px rgba(205,208,207,.12));will-change:transform}
-    .glyph img{width:100%;height:auto;display:block;object-fit:contain;opacity:.63;user-select:none;-webkit-user-drag:none;animation:levitate 15s ease-in-out infinite alternate}
+     .glyph img{width:100%;height:auto;display:block;object-fit:contain;opacity:.40;filter:blur(.25px);user-select:none;-webkit-user-drag:none;animation:levitate 15s ease-in-out infinite alternate}
     .glyph-owl{width:clamp(280px,32vw,510px);left:max(-115px,calc(50% - 915px));top:clamp(125px,25vh,280px);transform:translate3d(calc(var(--mx)*-.60),calc(var(--my)*-.42),0) rotate(-7deg)}
     .glyph-eye{width:clamp(285px,35vw,565px);right:max(-120px,calc(50% - 950px));top:clamp(120px,20vh,245px);transform:translate3d(calc(var(--mx)*.44),calc(var(--my)*.35),0) rotate(6deg)}
-    .glyph-eye img{opacity:.52;animation-delay:-7.5s;animation-duration:18s}
+    .glyph-eye img{opacity:.34;animation-delay:-7.5s;animation-duration:18s}
     .glyph-owl::after,.glyph-eye::after{content:"";position:absolute;z-index:-1;inset:5%;border-radius:50%;background:radial-gradient(circle,rgba(200,201,194,.08),transparent 68%);filter:blur(24px)}
     .veil{z-index:-2;background:radial-gradient(ellipse min(45vw,580px) 57% at 50% 47%,rgba(5,8,11,.81),rgba(7,10,13,.44) 64%,transparent 100%),
         linear-gradient(0deg,#070a0d 0%,transparent 17%,transparent 78%,rgba(7,10,13,.42) 100%);}
@@ -69,9 +69,9 @@
     @media(max-width:1050px){.glyph-owl{left:-140px;top:24vh;opacity:.8}.glyph-eye{right:-170px;top:23vh;opacity:.8}main{max-width:760px}.veil{background:radial-gradient(ellipse 54% 60% at 50% 46%,rgba(5,8,11,.9),rgba(7,10,13,.58) 64%,transparent 100%)}}
     @media(max-width:690px){
       .masthead{padding:27px 28px 0}.mast-note{display:none}
-      .glyph-owl{width:57vw;max-width:260px;left:-10vw;top:89px;opacity:.85;transform:rotate(-9deg)}
-      .glyph-eye{width:59vw;max-width:265px;right:-11vw;top:107px;opacity:.8;transform:rotate(8deg)}
-      .glyph img{opacity:.60;animation-duration:16s}.glyph-eye img{opacity:.57}
+      .glyph-owl{width:52vw;max-width:230px;left:-3vw;top:120px;opacity:.85;transform:rotate(-9deg)}
+      .glyph-eye{width:52vw;max-width:230px;right:-3vw;top:123px;opacity:.8;transform:rotate(8deg)}
+      .glyph img{opacity:.44;animation-duration:16s}.glyph-eye img{opacity:.39}
       .veil{background:linear-gradient(180deg,rgba(6,9,12,.06) 0%,rgba(7,10,13,.07) 16%,rgba(7,10,13,.94) 39%,rgba(7,10,13,.82) 85%,#070a0d 100%)}
       main{padding:295px 25px 55px;justify-content:flex-start}
       .overline{font-size:8px;letter-spacing:.27em;margin-bottom:15px}
