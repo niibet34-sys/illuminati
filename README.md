@@ -20,8 +20,18 @@ The motto `Lux intus, lux mundi` represents the contemporary website and is not 
 - Cloudflare Pages project: `illuminati-aetherni`
 - Build command: none; output directory: `.`
 - Preview site: https://illuminati-aetherni.pages.dev/
-- Planned custom domain: https://illuminati.cv/
+- Active custom domain: https://illuminati.cv/ (also www.illuminati.cv)
+
+## Localisation
+
+`i18n.js` selects the site language from the visitor's browser or device preferences (`navigator.languages` and `navigator.language`). It covers 18 locales: English, Russian, French, German, Spanish, Italian, Portuguese, Ukrainian, Polish, Dutch, Turkish, Arabic, Simplified Chinese, Traditional Chinese, Japanese, Korean, Czech and Romanian. Unsupported languages fall back to English.
+
+For quality assurance and optional links, an explicit `?lang=ru` or `?lang=fr` query parameter overrides automatic detection. The main brand name, Latin motto and email address are intentionally not translated. No translation API, cookies, or tracking are used.
+
+## Mobile layout
+
+The background symbols are positioned higher and the main content follows them with substantially reduced top whitespace. Check the 320px and 390px mobile widths when changing typography or copy. Reduced-motion preferences are respected.
 
 ## Contact
 
-The only contact action is a `mailto:` link to `contact@illuminati.cv`. Incoming email depends on separately configured mail forwarding and DNS.
+The only contact action is a `mailto:` link to `contact@illuminati.cv`. Incoming mail is routed via Cloudflare Email Routing to the configured verified destination. Mail forwarding and DNS management are outside the static website itself.
